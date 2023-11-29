@@ -3,8 +3,8 @@ import React from "react";
 import Image from "next/image";
 import Rating from "@/assets/Rating.png";
 import Rating1 from "@/assets/Rating1.png";
-import Activity from "@/assets/activity.png";
-import PieChart from "@/assets/pieChart 1.png";
+import Activity from "@/assets/Activity.png";
+import PieChart from "@/assets/PieChart 1.png";
 import Vector from "@/assets/Vector.png";
 
 const SupportPgae = () => {
