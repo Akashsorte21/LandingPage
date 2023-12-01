@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section>
       <Wrapper>
-        <div className="flex flex-col md:flex-row justify-center items-center pl-20 md:pl-0 my-5 py-10 ">
+        <div className="flex flex-col md:flex-row justify-center items-center pl-20 md:pl-0 my-5 py-10 max-w-screen-xl">
           {/* left div */}
 
           <div className="flex-1">
