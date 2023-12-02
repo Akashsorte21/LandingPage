@@ -18,7 +18,7 @@ const Benifit = () => {
             What Benifit Will You Get
           </h1>
           <div>
-            <ul className="">
+            <ul className="mt-5 lg:mt-0">
               <li className="flex items-center gap-3 mb-3">
                 <Image src={Substract} alt="" /> Free Consulting With Experet
                 Saving Money
@@ -49,7 +49,7 @@ const Benifit = () => {
 
         {/* right container */}
 
-        <div className="flex-1">
+        <div className="flex-1 mt-5 lg:mt-0">
           <Image src={BenifitImg} alt="" />
         </div>
       </div>
@@ -85,8 +85,8 @@ const SelectPlan = () => {
 const Plans = () => {
   return (
     <Wrapper>
-      <div className="my-24 gap-x-10 grid grid-cols-1 md:grid-cols-3 gap-y-10 lg:grid-cols-3 lg:gap-3 justify-items-center mx-auto">
-        <div className="shadow-2xl p-5 text-center px-6 py-20 max-w-xs rounded-[20px] hover:scale-110 duration-300 capitalize active:scale-100 ">
+      <div className="my-24 gap-x-5 grid grid-cols-1 md:grid-cols-3 gap-y-10 lg:grid-cols-3 gap-3 justify-items-center mx-auto ">
+        <div className="shadow-2xl text-center p-3 lg:p-5 py-20 max-w-xs rounded-[20px] hover:scale-110 duration-300 capitalize active:scale-100 ">
           <h2 className="text-center text-3xl font-semibold mb-3">Free</h2>
           <p className="text-center text-lg text-[#A6A6A6] leading-7">
             Have a go and test your superpowers
@@ -121,7 +121,7 @@ const Plans = () => {
           <button className="text-[#54BD95] mt-7">Signup for free</button>
         </div>
 
-        <div className="shadow-2xl p-5 max-w-xs rounded-[20px] bg-[#54BD95] hover:scale-110 duration-300 capitalize active:scale-100 ">
+        <div className="shadow-2xl p-3 lg:p-5 max-w-xs rounded-[20px] bg-[#54BD95] hover:scale-110 duration-300 capitalize active:scale-100 ">
           <h2 className="text-center text-3xl font-semibold mb-3 text-[#FFFFFF]">
             Pro
           </h2>
@@ -161,13 +161,13 @@ const Plans = () => {
                 Online Transaction
               </li>
             </ul>
-            <button className="bg-[#54BD95] text-white py-2 px-16 rounded-[10px] text-base mb-5">
+            <button className="bg-[#54BD95] text-white py-2 px-8 lg:px-16 rounded-[10px] text-base mb-5">
               Go to pro
             </button>
           </div>
         </div>
 
-        <div className="shadow-2xl p-5 text-center px-6 py-20 max-w-xs rounded-[20px] hover:scale-110 duration-300 capitalize active:scale-100 ">
+        <div className="shadow-2xl p-3 lg:p-5 text-center px-6 py-20 max-w-xs rounded-[20px] hover:scale-110 duration-300 capitalize active:scale-100 ">
           <h2 className="text-center text-3xl font-semibold mb-3">Business</h2>
           <p className="text-center text-lg text-[#A6A6A6] leading-7">
             Unveil new superpowers and join the Design Leaque
