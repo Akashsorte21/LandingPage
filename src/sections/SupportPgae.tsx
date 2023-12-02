@@ -16,11 +16,11 @@ const SupportPgae = () => {
       >
         {/* left containt */}
 
-        <div className="">
-          <h2 className=" text-4xl sm:justify-between items-center lg:text-5xl font-semibold mb-5 md:mb-10">
+        <div className="text-center md:text-start px-10 md:px-0">
+          <h2 className=" text-4xl sm:justify-between items-center lg:text-5xl font-semibold mb-5 lg:mb-10 leading-[40px] lg:leading-[60px]">
             How we support our pratner all over the world
           </h2>
-          <p className="text-[#A6A6A6] text.base mb-10 md:pt-20 lg:pt-0 lg:w-[644px]">
+          <p className="text-[#A6A6A6] text.base mb-10 lg:pt-0 lg:w-[644px]">
             SaaS become a common delivery model for many business application,
             including office software, messaging software, payroll processing
             software, DBMS software, management software
@@ -47,7 +47,7 @@ const SupportPgae = () => {
 
         {/* right containt */}
 
-        <div className="">
+        <div className="text-center md:text-start px-10 md:px-0">
           <div className="flex justify-center items-center mb-10 gap-x-4 mt-20 md:mt-0">
             <Image src={Activity} alt="" />
             <div className="">
