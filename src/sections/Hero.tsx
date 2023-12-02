@@ -14,19 +14,19 @@ const Hero = () => {
   return (
     <section>
       <Wrapper>
-        <div className="flex flex-col md:flex-row justify-center items-center pl-20 md:pl-0 my-5 py-10 max-w-screen-xl">
+        <div className="linear-color flex flex-col md:flex-row justify-center items-center my-10 ">
           {/* left div */}
 
           <div className="flex-1">
-            <h1 className="text-2xl lg:text-5xl  font-bold text-[#191A15] w-[455px]">
+            <h1 className="text-4xl lg:text-5xl font-bold text-[#191A15] w-[255] lg:w-[455px]">
               We’re here to Increase your Productivity
             </h1>
             <Image
-              className="mt-5 mb-5 w-[279px] h-[30px]"
+              className="mt-5 mb-10 w-[204px] lg:w-[279px] h-[30px]"
               src={Vector1}
               alt=""
             />
-            <p className="mt-6 text-lg text-[#000000] max-w-xl leading-[30px] w-[361px] lg:w-[461px]">
+            <p className="mt-6 text-lg text-[#000000] mb:5 md:mb-10">
               Let's make your work more organize and easily using the Taskio
               Dashboard with many of the latest featuresin managing work every
               day.
@@ -51,11 +51,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="my-10">
+        <div className="lg:my-10">
           <h2 className="text-center text-4xl font-bold mb-10">
             More than 25,000 teams use Collabs
           </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-5 justify-center gap-x-12 mb-10">
+          <div className="grid grid-cols-3 lg:grid-cols-5 justify-center gap-x-10 mb-20 gap-y-5">
             <Image src={icon1} alt="" />
             <Image src={icon2} alt="" />
             <Image src={icon3} alt="" />
