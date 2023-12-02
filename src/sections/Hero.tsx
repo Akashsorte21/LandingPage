@@ -14,28 +14,28 @@ const Hero = () => {
   return (
     <section>
       <Wrapper>
-        <div className="linear-color flex flex-col md:flex-row justify-center items-center my-10 ">
+        <div className="linear-color flex flex-col md:flex-row justify-center items-center md:my-10 text-center md:text-start px-10 md:px-0">
           {/* left div */}
 
           <div className="flex-1">
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#191A15] w-[255] lg:w-[455px]">
+            <h1 className="text-4xl lg:text-5xl font-bold text-[#191A15] w-[255] lg:w-[455px] mt-[-40px] md:mt-0">
               We’re here to Increase your Productivity
             </h1>
             <Image
-              className="mt-5 mb-10 w-[204px] lg:w-[279px] h-[30px]"
+              className="mt-5 mb-10 w-[204px] lg:w-[279px] h-[30px] mx-auto md:mx-0"
               src={Vector1}
               alt=""
             />
-            <p className="mt-6 text-lg text-[#000000] mb:5 md:mb-10">
+            <p className="mt-6 text-lg text-[#000000] mb:10 md:mb-10">
               Let's make your work more organize and easily using the Taskio
               Dashboard with many of the latest featuresin managing work every
               day.
             </p>
-            <div className="flex gap-10 mt-5 mb-16">
-              <button className="bg-[#54BD95] hover:shadow-lg text-white py-3 px-5 rounded-[40px] text-lg z-0 hover:scale-105 duration-300 capitalize active:scale-100">
+            <div className="flex gap-10 mt-10 md:mt-5 mb-16">
+              <button className="bg-[#54BD95] hover:shadow-lg text-white py-2 md:py-3 px-3 md:px-5 rounded-[40px] text-sm md:text-lg z-0 hover:scale-105 duration-300 capitalize active:scale-100">
                 Try free trail
               </button>
-              <button className="flex items-center text-lg">
+              <button className="flex items-center  text-sm md:text-lg">
                 <span>
                   <Image src={playPng} alt="logo" />
                 </span>
@@ -47,11 +47,11 @@ const Hero = () => {
           {/* right div */}
 
           <div className="flex-1">
-            <Image src={HeroLogo} alt="" />
+            <Image className="mb-10 md:mb-0" src={HeroLogo} alt="" />
           </div>
         </div>
 
-        <div className="lg:my-10">
+        <div className="lg:my-10 px-10 md:px-0">
           <h2 className="text-center text-4xl font-bold mb-10">
             More than 25,000 teams use Collabs
           </h2>
