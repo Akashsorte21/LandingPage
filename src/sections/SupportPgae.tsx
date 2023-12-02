@@ -12,27 +12,27 @@ const SupportPgae = () => {
     <Wrapper>
       <div
         className="md:flex justify-between items-center my-10
-       bg-[#F9F8FE] mb-20 md:gap-x-20 py-20"
+       bg-[#F9F8FE] mb-10 py-10 lg:py-10 "
       >
         {/* left containt */}
 
         <div className="">
-          <h2 className=" text-4xl sm:justify-between items-center w-[350px] lg:text-5xl font-semibold leading-[50px] lg:w-[617px] h-[122px] mb-10 md:mb-0">
+          <h2 className=" text-4xl sm:justify-between items-center lg:text-5xl font-semibold mb-5 md:mb-10">
             How we support our pratner all over the world
           </h2>
-          <p className="text-[#A6A6A6] text.base mb-10">
+          <p className="text-[#A6A6A6] text.base mb-10 md:pt-20 lg:pt-0 lg:w-[644px]">
             SaaS become a common delivery model for many business application,
             including office software, messaging software, payroll processing
             software, DBMS software, management software
           </p>
 
-          <div className="flex gap-x-10">
+          <div className="flex gap-x-10 mb-0 md:mb-20">
             <div>
               <Image src={Rating} alt="" />
               <p className="text-lg mt-3">
                 <span className="font-bold">4.9</span>/5 rating
               </p>
-              <p className="text-lg">databricks</p>
+              <p className="text-lg mt-3">databricks</p>
             </div>
 
             <div>
@@ -40,15 +40,15 @@ const SupportPgae = () => {
               <p className="text-lg mt-3">
                 <span className="font-bold">4.8</span>/5 rating
               </p>
-              <p className="text-lg">Chainalysis</p>
+              <p className="text-lg mt-3">Chainalysis</p>
             </div>
           </div>
         </div>
 
         {/* right containt */}
 
-        <div className="mt-20">
-          <div className="flex justify-center items-center mb-10 gap-x-4">
+        <div className="">
+          <div className="flex justify-center items-center mb-10 gap-x-4 mt-20 md:mt-0">
             <Image src={Activity} alt="" />
             <div className="">
               <h2 className="text-2xl font-bold ">Publishing</h2>
@@ -63,7 +63,7 @@ const SupportPgae = () => {
             <Image src={PieChart} alt="" />
             <div className="justify-center">
               <h2 className="text-2xl font-bold ">Analytics</h2>
-              <p className="text-[#A6A6A6] font-medium">
+              <p className="text-[#A6A6A6] font-medium lg:w-[356px]">
                 Analyze your performance and create goegeous report
               </p>
             </div>
@@ -74,7 +74,7 @@ const SupportPgae = () => {
             <div className="justify-center">
               <h2 className="text-2xl font-bold ">Engagement</h2>
 
-              <p className="text-[#A6A6A6] font-medium">
+              <p className="text-[#A6A6A6] font-medium lg:w-[356px]">
                 Quiuckly navigate you anda engage with your adience
               </p>
             </div>
