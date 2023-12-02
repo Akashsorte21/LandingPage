@@ -9,7 +9,7 @@ const Features = () => {
   return (
     <Wrapper>
       <div className="my-10">
-        <div className="flex md:flex justify-between items-center ">
+        <div className="flex md:flex justify-between items-center">
           <h1 className="w-[331px] text-3xl lg:text-5xl font-semibold">
             Our Features you cab get
           </h1>
@@ -23,7 +23,7 @@ const Features = () => {
         </div>
 
         <article>
-          <div className="grid md:grid-cols-3 lg:grid-cols-3 my-20 justify-center justify-items-center gap-x-24 pr-10">
+          <div className="grid md:grid-cols-3 lg:grid-cols-3 my-20 justify-center justify-items-center gap-x-24 md:pr-24 lg:pr-0">
             <div className="md:w-5/6 lg:w-auto">
               <Image src={Feature1} alt="" />
               <h2 className="text-2xl lg:text-3xl font-semibold pt-5 ">
