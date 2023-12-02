@@ -8,23 +8,23 @@ import Feature3 from "@/assets/Feature3.png";
 const Features = () => {
   return (
     <Wrapper>
-      <div className="my-10">
-        <div className="flex md:flex justify-between items-center">
-          <h1 className="w-[331px] text-3xl lg:text-5xl font-semibold">
+      <div className="my-10 px-10 md:px-0">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-y-5 md:gap-y-0">
+          <h1 className="text-center md:text-start lg:w-[331px] text-3xl lg:text-5xl font-semibold">
             Our Features you cab get
           </h1>
-          <p className="w-[381px]">
+          <p className="md:w-[381px] text-center md:text-start my- md:my-0">
             We offer a variety of interesting features that you can help
             increase yor productivity at work and manage your projrct esaly
           </p>
-          <button className="bg-[#54BD95] hover:shadow-lg text-white  md:py-3 px-5 md:px-5 rounded-[40px] text-sm md:text-lg z-0 hover:scale-105 duration-300 capitalize active:scale-100 w-[80px] md:w-[162px]">
+          <button className="bg-[#54BD95] hover:shadow-lg text-white py-3 px-5 rounded-[40px] text-sm md:text-lg z-0 hover:scale-105 duration-300 capitalize active:scale-100 w-[162px]">
             Get Started
           </button>
         </div>
 
         <article>
-          <div className="grid md:grid-cols-3 lg:grid-cols-3 my-20 justify-center justify-items-center gap-x-24 md:pr-24 lg:pr-0">
-            <div className="md:w-5/6 lg:w-auto">
+          <div className="grid md:grid-cols-3 lg:grid-cols-3 my-20 justify-center justify-items-center gap-x-24 md:pr-24 lg:pr-0 gap-y-10 md:gap-y-0">
+            <div className="md:w-5/6 lg:w-auto md:text-start text-center">
               <Image src={Feature1} alt="" />
               <h2 className="text-2xl lg:text-3xl font-semibold pt-5 ">
                 Collboration Teams{" "}
@@ -34,7 +34,7 @@ const Features = () => {
               </p>
             </div>
 
-            <div className="md:w-5/6 lg:w-auto">
+            <div className="md:w-5/6 lg:w-auto md:text-start text-center">
               <Image src={Feature2} alt="" />
               <h2 className="text-2xl lg:text-3xl font-semibold pt-5">
                 Cloud Storage{" "}
@@ -45,7 +45,7 @@ const Features = () => {
               </p>
             </div>
 
-            <div className="md:w-5/6 lg:w-auto">
+            <div className="md:w-5/6 lg:w-auto md:text-start text-center">
               <Image src={Feature3} alt="" />
               <h2 className="text-2xl lg:text-3xl font-semibold pt-5">
                 Daily Analytics
