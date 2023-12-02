@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import logo from "public/logo.png";
 import Image from "next/image";
 import Wrapper from "@/shared/Wrapper";
-import Link from "next/link";
 import { CgMenu } from "react-icons/cg";
 
 const Header = () => {
@@ -15,14 +14,14 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <header className="pt-5 pb-2 select-none">
-        <nav className="flex justify-between items-center mx-auto">
+      <header className=" py-10 select-none">
+        <nav className="flex justify-between items-center mx-auto max-w-screen-xl">
           <div>
             <div className="inline-block mr-2"></div>
             <span className="text-2xl sm:text-4xl font-mono inline-block mb-2">
               <Image
                 src={logo}
-                className="inline-block transform -translate-y-2     w-28 lg:w-auto"
+                className="inline-block transform -translate-y-2 w-28 lg:w-auto"
                 alt="Logo"
               />
             </span>
@@ -58,10 +57,10 @@ const Header = () => {
           </div>
 
           <div className="flex items-center gap-8">
-            <button className="text-[#A6A6A6] text-base font-medium leading-5">
+            <button className="text-[#A6A6A6] text-base font-medium leading-5 hidden md:block">
               Log In
             </button>
-            <button className="text-[#F8F8FA] text-base font-medium leading-5 bg-[#54BD95] rounded-[10px] py-2  lg:py-3 px-3  lg:px-4">
+            <button className="text-[#F8F8FA] hidden md:block text-base font-medium leading-5 bg-[#54BD95] rounded-[10px] py-2  lg:py-3 px-3  lg:px-4">
               SignUp
             </button>
             <span
