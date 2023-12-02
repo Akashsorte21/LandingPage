@@ -7,18 +7,18 @@ import BenifitImg from "@/assets/BenifitImg.png";
 const Benifit = () => {
   return (
     <Wrapper>
-      <div className="flex justify-center items-center my-24">
+      <div className="flex flex-col md:flex-row justify-center items-center my-24">
         {/* left containt */}
 
-        <div className="flex-1">
+        <div className="flex-1 px-10 md:px-0">
           <h1
-            className="text-3xl md:text-5xl font-bold 
-          leading-[45px] lg:leading-[60px] lg:w-[429px] h-[122px]"
+            className="text-center md:text-start text-3xl md:text-5xl font-bold 
+          leading-[40px] lg:leading-[60px] lg:w-[429px] h-[122px] lg:mb-10"
           >
             What Benifit Will You Get
           </h1>
           <div>
-            <ul className="mt-5 lg:mt-0">
+            <ul className="">
               <li className="flex items-center gap-3 mb-3">
                 <Image src={Substract} alt="" /> Free Consulting With Experet
                 Saving Money
@@ -49,7 +49,7 @@ const Benifit = () => {
 
         {/* right container */}
 
-        <div className="flex-1 mt-5 lg:mt-0">
+        <div className="flex-1 mt-10 md:mt-0">
           <Image src={BenifitImg} alt="" />
         </div>
       </div>
@@ -61,22 +61,23 @@ const SelectPlan = () => {
   return (
     <Wrapper>
       <section>
-        <div className="my-24">
-          <div className="text-center">
-            <h1 className=" text-center mx-auto text-4xl md:text-5xl leading-[60px] font-bold w-[439] lg:w-[539px]">
-              Choose Plan That’s Right For You
-            </h1>
-            <p className="mt-6 mb-2 text-lg text-[#A6A6A6]">
-              Choose plan that works best for you, feel free to contact us
-            </p>
-            <div className="w-[240px] h-[70px] py-2 shadow-xl  text-center mx-auto pt-6 rounded-[10px]">
-              Bill Monthly
-              <button className="bg-[#54BD95] text-white py-[8px] px-5 rounded-[10px] text-base ml-5">
-                Bil Yearly
-              </button>
+      <div className="my-24 relative">
+            <div className="text-center px-10 md:px-0">
+              <h1 className="text-center mx-auto text-4xl md:text-5xl leading-[40px] md:leading-[60px] font-bold md:w-[539px]">
+                Choose Plan <br /> That’s Right For You
+              </h1>
+              <p className="mt-6 mb-2 text-lg text-[#A6A6A6]">
+                Choose plan that works best for you, feel free to contact us
+              </p>
+              <div className="w-[240px] h-[70px] py-2 shadow-xl  text-center mx-auto pt-6 rounded-[10px]">
+                Bill Monthly
+                <button className="bg-[#54BD95] text-white py-[8px] px-5 rounded-[10px] text-base ml-5">
+                  Bil Yearly
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+    
       </section>
     </Wrapper>
   );
@@ -86,7 +87,7 @@ const Plans = () => {
   return (
     <Wrapper>
       <div className="my-24 gap-x-5 grid grid-cols-1 md:grid-cols-3 gap-y-10 lg:grid-cols-3 gap-3 justify-items-center mx-auto ">
-        <div className="shadow-2xl text-center p-3 lg:p-5 py-20 max-w-xs rounded-[20px] hover:scale-110 duration-300 capitalize active:scale-100 ">
+        <div className="shadow-2xl text-center p-3 lg:p-5 py-20 max-w-xs rounded-[20px] hover:scale-105 duration-300 capitalize active:scale-100 ">
           <h2 className="text-center text-3xl font-semibold mb-3">Free</h2>
           <p className="text-center text-lg text-[#A6A6A6] leading-7">
             Have a go and test your superpowers
@@ -95,7 +96,7 @@ const Plans = () => {
             <span className="text-[#A6A6A6]">$</span>0
           </h1>
           <ul className="mt-5">
-            <li className="flex items-center gap-3 mb-3">
+            <li className="flex items-center gap-3 mb-3 pt-5">
               <Image src={Substract} alt="" /> 2 Users
             </li>
             <li className="flex items-center gap-3 mb-3">
@@ -118,10 +119,12 @@ const Plans = () => {
               New income apps
             </li>
           </ul>
-          <button className="text-[#54BD95] mt-7">Signup for free</button>
+          <button className="text-[#54BD95] mt-7 w-[190px] h-[70px] py-2 shadow-xl  text-center mx-auto pt-6 rounded-[10px]">
+            Signup for free
+          </button>
         </div>
 
-        <div className="shadow-2xl p-3 lg:p-5 max-w-xs rounded-[20px] bg-[#54BD95] hover:scale-110 duration-300 capitalize active:scale-100 ">
+        <div className="shadow-2xl p-3 lg:p-5 max-w-xs rounded-[20px] bg-[#54BD95] hover:scale-105 duration-300 capitalize active:scale-100 ">
           <h2 className="text-center text-3xl font-semibold mb-3 text-[#FFFFFF]">
             Pro
           </h2>
@@ -161,13 +164,13 @@ const Plans = () => {
                 Online Transaction
               </li>
             </ul>
-            <button className="bg-[#54BD95] text-white py-2 px-8 lg:px-16 rounded-[10px] text-base mb-5">
+            <button className="bg-[#54BD95] text-white py-3 px-8 lg:px-16 rounded-[10px] text-base mb-5">
               Go to pro
             </button>
           </div>
         </div>
 
-        <div className="shadow-2xl p-3 lg:p-5 text-center px-6 py-20 max-w-xs rounded-[20px] hover:scale-110 duration-300 capitalize active:scale-100 ">
+        <div className="shadow-2xl p-3 lg:p-5 text-center px-6 py-20 max-w-xs rounded-[20px] hover:scale-105 duration-300 capitalize active:scale-100 ">
           <h2 className="text-center text-3xl font-semibold mb-3">Business</h2>
           <p className="text-center text-lg text-[#A6A6A6] leading-7">
             Unveil new superpowers and join the Design Leaque
@@ -176,7 +179,7 @@ const Plans = () => {
             <span className="text-[#A6A6A6]">$</span>16
           </h1>
 
-          <ul className="mt-5">
+          <ul className="mt-7">
             <li className="flex items-center gap-3 mb-3">
               <Image src={Substract} alt="" /> All the features of pro plan
             </li>
@@ -201,7 +204,9 @@ const Plans = () => {
               Collaboration-Soon
             </li>
           </ul>
-          <button className="text-[#54BD95] mt-7">Goto Business</button>
+          <button className="text-[#54BD95] mt-7 w-[190px] h-[70px] py-2 shadow-xl  text-center mx-auto pt-6 rounded-[10px]">
+            Goto Business
+          </button>
         </div>
       </div>
     </Wrapper>
