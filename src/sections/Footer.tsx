@@ -103,7 +103,7 @@ const Copyright = () => {
   return (
     <Wrapper>
       <footer>
-        <div className="bg-[#161C28] pt-20 px-20 pb-20 py-10 lg:flex">
+        <div className="bg-[#161C28] pt-20 px-10 lg:px-20 pb-20 py-10 lg:flex">
           <div className="flex-1">
             <Image src={logo} alt="" />
             <p className="text-[#A6A6A6] my-5">
@@ -117,8 +117,8 @@ const Copyright = () => {
               />
               <div>
                 <Image
-                  className="absolute rounded-full mt-3 m-5 left-[29%] bg-[#54BD95] hover:scale-150
-                  duration-300 capitalize active:scale-100 lg:hidden"
+                  className="absolute rounded-full mt-3 m-5 left-[30%] bg-[#54BD95] hover:scale-150
+                  duration-300 capitalize active:scale-100 hidden lg:block"
                   src={ArrowRight}
                   alt=""
                 />
@@ -154,7 +154,7 @@ const Copyright = () => {
             </div>
           </aside>
         </div>
-        <div className="flex justify-between bg-[#161C28] pb-10 px-20 text-[#FFFFFF] text-lg font-medium gap-x-4 lg:gap-x-0">
+        <div className="flex justify-between bg-[#161C28] pb-10 px-10  md:px-20 text-[#FFFFFF] text-lg font-medium gap-x-4 lg:gap-x-0">
           <p>© 2022 Biccas Inc. Copyright and rights reserved</p>
           <p>Terms and Condtions . Privacy Policy</p>
         </div>
