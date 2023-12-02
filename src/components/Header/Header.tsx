@@ -15,22 +15,22 @@ const Header = () => {
   return (
     <Wrapper>
       <header className=" py-10 select-none">
-        <nav className="flex justify-between items-center mx-auto max-w-screen-xl">
+        <nav className="flex justify-between items-center mx-auto max-w-screen-xl px-10 md:px-0">
           <div>
             <div className="inline-block mr-2"></div>
             <span className="text-2xl sm:text-4xl font-mono inline-block mb-2">
               <Image
                 src={logo}
-                className="inline-block transform -translate-y-2 w-28 lg:w-auto"
+                className="inline-block transform -translate-y-2 w-28 mb-5 md:mb-0 lg:w-auto"
                 alt="Logo"
               />
             </span>
           </div>
 
           <div
-            className={`nav-links bg-black md:bg-white  duration-500 md:static absolute md:min-h-fit min-h-[45vh] left-0 ${
-              isMenuOpen ? "top-[10%] " : "top-[-100%]"
-            } md:w-auto w-full flex items-center px-5`}
+            className={`nav-links bg-slate-900 md:bg-white  duration-500 md:static absolute md:min-h-fit min-h-[45vh] left-0 ${
+              isMenuOpen ? "top-[11%] " : "top-[-100%]"
+            } md:w-auto w-full flex justify-center text-center items-center px-5 z-20`}
           >
             <ul className="flex md:flex-row flex-col md:items-center md:gap-[3vw] gap-y-8 ml-1 cursor-pointer">
               {/* {NavMenus.map((Menu, index) => (
@@ -66,7 +66,7 @@ const Header = () => {
             <span
               onClick={toggleMenu}
               // name={isMenuOpen ? "close" : "menu"}
-              className="text-3xl cursor-pointer md:hidden"
+              className="text-3xl cursor-pointer md:hidden mb-10 md:mb-0 "
             >
               <CgMenu />
             </span>
